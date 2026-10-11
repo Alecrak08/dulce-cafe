@@ -1,57 +1,128 @@
 <!DOCTYPE html>
-
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dulce Café</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Dulce Café | Café y postres</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
 
-```
-<header>
-    <h1>Dulce Café</h1>
+    <header class="encabezado">
+        <h1>Dulce Café</h1>
+        <p class="subtitulo">Un momento dulce en cada taza</p>
 
-    <nav>
-        <a href="#inicio">Inicio</a>
-        <a href="#productos">Productos</a>
-        <a href="#contacto">Contacto</a>
-    </nav>
-</header>
+        <nav class="menu">
+            <a href="#inicio">Inicio</a>
+            <a href="#productos">Productos</a>
+            <a href="#nosotros">Nosotros</a>
+            <a href="#contacto">Contacto</a>
+        </nav>
 
-<main>
+        <button id="btn-tema" type="button">
+            Activar modo oscuro
+        </button>
+    </header>
 
-    <section id="inicio">
-        <h2>Bienvenidos a Dulce Café</h2>
-        <p>
-            Somos una cafetería local que ofrece café, bebidas y postres
-            para disfrutar en un ambiente agradable.
-        </p>
-    </section>
+    <main>
+        <section id="inicio" class="seccion presentacion">
+            <h2>Bienvenidos a Dulce Café</h2>
+            <p>
+                Disfruta de un buen café y acompáñalo con tus postres favoritos.
+                En Dulce Café queremos que cada pausa de tu día sea especial.
+            </p>
+            <a class="boton" href="#productos">Conoce nuestros productos</a>
+        </section>
 
-    <section id="productos">
-        <h2>Nuestros productos</h2>
+        <section id="productos" class="seccion">
+            <h2>Nuestros productos</h2>
 
-        <h3>Café</h3>
-        <p>Café americano y café con leche preparados al momento.</p>
+            <div class="productos">
+                <article class="tarjeta">
+                    <h3>☕ Café</h3>
+                    <p>
+                        Café americano y café con leche para comenzar
+                        el día con energía.
+                    </p>
+                </article>
 
-        <h3>Postres</h3>
-        <p>Tortas, brownies y otros postres para acompañar tu bebida.</p>
+                <article class="tarjeta">
+                    <h3>🍰 Postres</h3>
+                    <p>
+                        Tortas y brownies ideales para acompañar
+                        una taza de café.
+                    </p>
+                </article>
 
-        <h3>Bebidas</h3>
-        <p>Jugos naturales y bebidas frías para diferentes gustos.</p>
-    </section>
+                <article class="tarjeta">
+                    <h3>🥤 Bebidas frías</h3>
+                    <p>
+                        Bebidas refrescantes para disfrutar
+                        en cualquier momento.
+                    </p>
+                </article>
+            </div>
+        </section>
 
-</main>
+        <section id="nosotros" class="seccion">
+            <h2>Sobre nosotros</h2>
+            <p>
+                Dulce Café es una propuesta de cafetería que busca ofrecer
+                bebidas y postres en un ambiente agradable, con una atención
+                cercana y una experiencia sencilla para sus clientes.
+            </p>
+        </section>
 
-<footer id="contacto">
-    <p>Dulce Café</p>
-    <p>Santa Cruz de la Sierra, Bolivia</p>
-    <p>Teléfono: 70000000</p>
-    <p>&copy; 2026 Dulce Café</p>
-</footer>
-```
+        <section id="contacto" class="seccion">
+            <h2>Contáctanos</h2>
+            <p>Completa el siguiente formulario para dejarnos tu consulta.</p>
 
+            <form id="form-contacto">
+                <div class="campo">
+                    <label for="nombre">Nombre:</label>
+                    <input
+                        type="text"
+                        id="nombre"
+                        name="nombre"
+                        required
+                    >
+                </div>
+
+                <div class="campo">
+                    <label for="correo">Correo electrónico:</label>
+                    <input
+                        type="email"
+                        id="correo"
+                        name="correo"
+                        required
+                    >
+                </div>
+
+                <div class="campo">
+                    <label for="mensaje">Tu mensaje:</label>
+                    <textarea
+                        id="mensaje"
+                        name="mensaje"
+                        rows="5"
+                        required
+                    ></textarea>
+                </div>
+
+                <button class="boton" type="submit">
+                    Enviar mensaje
+                </button>
+
+                <p id="respuesta-formulario" role="status"></p>
+            </form>
+        </section>
+    </main>
+
+    <footer class="pie">
+        <p>Dulce Café | Santa Cruz de la Sierra, Bolivia</p>
+        <p>Proyecto académico de Tecnología en Internet</p>
+        <p>&copy; 2026 Dulce Café</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
