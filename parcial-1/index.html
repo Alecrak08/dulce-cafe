@@ -1,0 +1,55 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>floreria la orquidea</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header id="inicio">
+        <h1>floreria la orquidea</h1>
+        <nav>
+            <a href="#inicio">inicio</a>
+            <a href="#arreglos">nuestros arreglos</a>
+            <a href="#contacto">contacto</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="arreglos">
+            <h2>nuestros arreglos</h2>
+            <p>en floreria la orquidea encontraras flores para regalar y decorar momentos especiales.</p>
+            <ul>
+                <li>ramo de rosas - bs 60</li>
+                <li>ramo de girasoles - bs 35</li>
+                <li>planta en maceta - bs 20</li>
+            </ul>
+        </section>
+
+        <section id="contacto">
+            <h2>encarga tus flores</h2>
+            <form>
+                <label for="nombre">nombre completo</label>
+                <input type="text" id="nombre" required>
+
+                <label for="correo">correo electronico</label>
+                <input type="email" id="correo" required>
+
+                <label for="detalle">detalle del pedido</label>
+                <textarea id="detalle"></textarea>
+            </form>
+
+            <button type="button" id="btn-confirmar">hacer mi pedido</button>
+            <p id="mensaje" class="oculto"></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>parcial 1 - luis alejandro terceros gutierrez - 12 de octubre de 2026</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
